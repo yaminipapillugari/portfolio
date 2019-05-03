@@ -1,0 +1,115 @@
+/* applying styles for the html code */
+.cards {
+  border: 2px solid black;
+  padding: 2px;
+  justify-content: space-around;
+  text-align: center;
+  margin-right: 5px;
+  width: 100%;
+}
+
+.heading {
+  text-shadow: 2px 2px 2px red;
+}
+
+.heading {
+  color: #000000;
+  text-shadow: 2px 2px 5px magenta;
+}
+
+.image {
+  width: 5em;
+  height: 5em;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.box {
+  display: flex;
+}
+
+.head {
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+  background: yellow;
+  margin-bottom: 2px;
+  justify-content: space-around;
+}
+
+.footer {
+  border: 2px solid black;
+  background: pink;
+  text-align: center;
+  margin-top: 5%;
+  width: 99.5%;
+  padding: 5px;
+}
+
+/* Applying media queries */
+/* media queries for mobile view */
+@media (min-width:320px) and (max-width:480px) {
+  .head {
+    width: 98%;
+  }
+
+  .heading {
+    margin-left: 14%;
+  }
+
+  .image {
+    margin: auto;
+  }
+
+  .heading {
+    margin-top: 10%;
+  }
+
+  .footer {
+    width: 98%;
+  }
+
+  .box {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    margin-bottom: 2px;
+    width: 100%;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* media queries for tablet view */
+@media (min-width:481px) and (max-width:780px) {
+  .head {
+    width: 99%;
+  }
+
+  .heading {
+    margin: 10% 20%;
+    font-size: 32px;
+  }
+
+  .footer {
+    width: 99%;
+    margin-top: 19%;
+    padding: 5px;
+  }
+
+  .cards {
+    width: 48%;
+    margin-bottom: 1%;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
